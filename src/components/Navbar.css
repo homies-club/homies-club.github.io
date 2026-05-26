@@ -1,0 +1,72 @@
+/*
+ * Qué hace el archivo: Estilos específicos para el Navbar.
+ * Fecha de última modificación: 2026-05-25
+ * Nombre del autor: Antigravity
+ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  }
+}

@@ -1,0 +1,62 @@
+/*
+ * Qué hace el archivo: Estilos para el componente About.
+ * Fecha de última modificación: 2026-05-25
+ * Nombre del autor: Antigravity
+ */
+
+.about-section {
+  background-color: var(--bg-secondary);
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text-col {
+  flex: 1;
+}
+
+.about-desc {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.about-desc strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.about-img-col {
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-img-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, rgba(255,85,0,0.2), transparent);
+}
+
+@media (max-width: 992px) {
+  .about-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text-col .section-title {
+    text-align: center !important;
+  }
+}

@@ -1,0 +1,146 @@
+/*
+ * Qué hace el archivo: Estilos para el componente Menu.
+ * Fecha de última modificación: 2026-05-25
+ * Nombre del autor: Antigravity
+ */
+
+.menu-section {
+  background-color: var(--bg-color);
+}
+
+.menu-category {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--bg-tertiary);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.menu-grid.grid-small {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-color);
+  background-color: rgba(255, 85, 0, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.item-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.menu-grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .menu-grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- ESTILOS DE EXPANSIÓN (Focus Effect) --- */
+.item-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.menu-card {
+  transition: transform 0.3s ease, z-index 0s, box-shadow 0.3s;
+  z-index: 1;
+}
+
+.card-expanded {
+  transform: scale(1.05) !important;
+  z-index: 101 !important;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(255, 85, 0, 0.2), 0 5px 15px rgba(0,0,0,0.8);
+  border: 1px solid var(--primary-color);
+}
+
+.expanded-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.95rem;
+}
