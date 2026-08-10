@@ -35,7 +35,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              src="/Homies logo.png"
               alt="Ambiente Urbano Homies club" 
               className="about-image"
             />

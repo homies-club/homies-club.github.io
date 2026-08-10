@@ -21,7 +21,7 @@ export default function Footer() {
           <h3>Ubícanos</h3>
           <div className="footer-info">
             <MapPin size={18} className="text-primary" />
-            <span>Calle Falsa 123, Ciudad, País <br/> </span>
+            <span>Nicolas Garatea Mz. 14, Lt. 5  <br/> </span>
           </div>
         </div>
 
@@ -30,16 +30,16 @@ export default function Footer() {
           <div className="footer-info">
             <Clock size={18} className="text-primary" />
             <span>
-              Mar - Dom: 6:00 PM - 11:30 PM <br/>
+              Mar - Dom: 5:30 PM - 11:30 PM <br/>
               Lunes: Cerrado <br/>
-              (Nota: Actualizar horarios)
+              
             </span>
           </div>
         </div>
       </div>
       
       <div className="footer-bottom">
-        <p>HOMIES CLUB — STREET FOOD EXPERIENCE &copy; {new Date().getFullYear()}</p>
+        <p>HOMIES CLUB — EDIT: Benja:7_ &copy; {new Date().getFullYear()}</p>
       </div>
     </footer>
   );
