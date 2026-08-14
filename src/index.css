@@ -1,11 +1,11 @@
 
 /*
- * Qué hace el archivo: Sistema de diseño, fuentes urbanas, variables y fondo global.
+ * Qué hace el archivo: Sistema de diseño, fuentes modernas y elegantes (Montserrat Black + Space Grotesk), variables y fondo global.
  * Fecha de última modificación: 2026-08-14
  * Nombre del autor: Antigravity
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700;800&family=Syne:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
   --bg-color: #080808;
@@ -18,11 +18,11 @@
   --primary-glow: rgba(255, 85, 0, 0.35);
   
   --text-color: #ffffff;
-  --text-muted: #b0b0b0;
+  --text-muted: #a5a5a5;
   
-  --font-heading: 'Bebas Neue', cursive, sans-serif;
-  --font-subheading: 'Syne', sans-serif;
-  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-subheading: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -76,12 +76,13 @@ button {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 3.8rem;
-  font-weight: 400;
+  font-size: 3.2rem;
+  font-weight: 900;
   text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  line-height: 1.15;
   text-shadow: 0 4px 20px rgba(0,0,0,0.6);
 }
 

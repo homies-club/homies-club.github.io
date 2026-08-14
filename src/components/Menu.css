@@ -15,8 +15,8 @@
 
 .category-title {
   font-family: var(--font-heading);
-  font-size: 2.8rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 30px;
   color: var(--text-color);
@@ -76,22 +76,25 @@
 
 .item-name {
   font-family: var(--font-subheading);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-color);
   margin-right: 12px;
-  line-height: 1.2;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .item-price {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  font-family: var(--font-subheading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   color: #ff7733;
-  background: rgba(255, 85, 0, 0.15);
+  background: rgba(255, 85, 0, 0.12);
   border: 1px solid var(--primary-color);
-  padding: 3px 12px;
-  border-radius: 20px;
+  padding: 4px 12px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 85, 0, 0.2);
   white-space: nowrap;
 }
