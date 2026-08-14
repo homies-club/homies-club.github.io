@@ -35,11 +35,11 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src="/Homies logo.png"
+              src="/ineterior.jpg"
               alt="Ambiente Urbano Homies club" 
               className="about-image"
             />
-            <div className="about-img-overlay"></div>
+            <div className="about-img-"></div>
           </motion.div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Cart({ cartItems, removeFromCart }) {
   };
 
   const getOrderMessage = () => {
-    let message = "Hola Homies Food! Quería hacer el siguiente pedido:\n\n";
+    let message = "Hola Homies Club! Quería hacer el siguiente pedido:\n\n";
     cartItems.forEach((item, index) => {
       message += `${index + 1}. ${item.name} - S/.${item.price || "0"}\n`;
     });

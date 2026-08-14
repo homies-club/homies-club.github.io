@@ -7,19 +7,19 @@
 export const menuData = {
   hamburguesas: [
     {
-      name: "Pollo Achorado",
+      name: "Pollo achorado",
       price: 10,
       description: "Pollo crispy, papas fritas, lechuga, tomate, ensalada de repollo y zanahoria.",
       image: "https://i.ibb.co/prr69WMz/Crispy-chicken-burger-with-fries-202605252213.jpg"
     },
     {
-      name: "LA CLÁSICA",
+      name: "La clásica",
       price: 7,
       description: "Carne, papas fritas, lechuga, tomate.",
       image: "https://i.ibb.co/BHSkBKD6/image.png"
     },
     {
-      name: "DE BARRIO",
+      name: "De barrio",
       price: 10,
       description: "Carne, cheddar, tocino, huevo, papas fritas, lechuga, tomate.",
       image: "https://i.ibb.co/gb9zxN6b/Hamburguesa-carne-cheddar-tocino-huevo-202605252142.jpg"
@@ -31,7 +31,7 @@ export const menuData = {
       image: "https://i.ibb.co/fYP23PWb/Acerca-m-s-la-imagen-no-tanto-202605252240.jpg"
     },
     {
-      name: "DOBLE CÁRNICO",
+      name: "Doble carnico",
       price: 13,
       description: "Doble carne, doble tocino, doble cheddar, onion crispy, papas fritas, bbq.",
       image: "https://i.ibb.co/HTRgt49W/image.png"
@@ -97,17 +97,12 @@ export const menuData = {
   ],
   wok: [
     {
-      name: "PAILA",
+      name: "Paila",
       price: 13,
       description: "Trozos de pechuga crispy en salsa de tamarindo acompañado de arroz chino con verduras salteadas.",
       image: "https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
-    {
-      name: "LA 28",
-      price: 13,
-      description: "Arroz chino con verduras acompañado de pollo anticuchero y papas fritas.",
-      image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
+
     {
       name: "LOMASO",
       price: 13,

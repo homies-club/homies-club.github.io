@@ -5,7 +5,7 @@
  */
 
 .menu-section {
-  background-color: var(--bg-color);
+  background: transparent;
 }
 
 .menu-category {
@@ -14,13 +14,16 @@
 }
 
 .category-title {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
   margin-bottom: 30px;
   color: var(--text-color);
-  border-bottom: 2px solid var(--bg-tertiary);
-  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 6px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .menu-grid {
@@ -54,11 +57,11 @@
 }
 
 .menu-card:hover .card-image {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .card-content {
-  padding: 20px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -67,30 +70,37 @@
 .card-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 15px;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 .item-name {
-  font-size: 1.3rem;
+  font-family: var(--font-subheading);
+  font-size: 1.35rem;
   font-weight: 700;
-  color: var(--primary-color);
-  margin-right: 15px;
+  color: var(--text-color);
+  margin-right: 12px;
+  line-height: 1.2;
 }
 
 .item-price {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--text-color);
-  background-color: rgba(255, 85, 0, 0.1);
-  padding: 4px 10px;
-  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #ff7733;
+  background: rgba(255, 85, 0, 0.15);
+  border: 1px solid var(--primary-color);
+  padding: 3px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.2);
+  white-space: nowrap;
 }
 
 .item-desc {
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .menu-grid-2-cols {
@@ -109,8 +119,8 @@
 .item-modal-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   z-index: 100;
 }
 
@@ -123,8 +133,8 @@
   transform: scale(1.05) !important;
   z-index: 101 !important;
   position: relative;
-  box-shadow: 0 15px 35px rgba(255, 85, 0, 0.2), 0 5px 15px rgba(0,0,0,0.8);
-  border: 1px solid var(--primary-color);
+  box-shadow: 0 15px 35px rgba(255, 85, 0, 0.3), 0 5px 20px rgba(0,0,0,0.9);
+  border: 2px solid var(--primary-color);
 }
 
 .expanded-actions {
@@ -141,6 +151,6 @@
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 0.95rem;
 }
